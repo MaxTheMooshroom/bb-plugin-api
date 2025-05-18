@@ -1,2 +1,5 @@
 
+interface BBPluginExtended {
+    name: string;
 
+}

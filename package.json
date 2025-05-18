@@ -2,15 +2,32 @@
   "name": "@bb-plugins/api",
   "version": "0.1.0",
   "description": "A \"polyfill\" for various component rewrites of and extensions to Blockbench.",
-  "private": true,
-  "keywords": [],
   "author": "Maxine Z.",
   "license": "ISC",
-  
-  "main": "",
+
+  "types": "dist/plugin.d.ts",
+  "main": "dist/plugin.js",
+
+  "private": true,
+	"typeScriptVersion": "5.8",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxTheMooshroom/bb-plugin-api"
+  },
+  "keywords": [
+    "blockbench",
+    "blockbench-plugins",
+    "plugin-api",
+    "api",
+    "typescript"
+  ],
+
+  "scripts": {
+    "build:types": "tsc"
+  },
 
   "devDependencies": {
-    "@bb-plugins/types": "",
+    "@bb-plugins/types": "MaxTheMooshroom/bb-api-types",
 		"@eslint/js": "^9.27.0",
 		"@types/node": "^22.15.18",
 		"@typescript-eslint/eslint-plugin": "^8.32.1",
@@ -25,7 +42,6 @@
 		"@babel/types": "^7.20.7",
 		"@types/dompurify": "^3.0.5",
 		"@types/jquery": "^3.5.32",
-		"@types/prismjs": "^1.26.0",
 		"@types/three": "^0.129.2",
 		"@types/tinycolor2": "^1.4.6",
 		"dompurify": "^3.2.5",
